@@ -1,26 +1,25 @@
+// C program to print alphabets
 #include"main.h"
 
-void print_alphabet()
+// Function to print the alphabet
+// in lower case
+void lowercaseAlphabets()
 {
-	//loop counter or a variable that
-	//will store initial alphabet,
-	//from where we will print the alphabets
-	char alphabet;
-	//assigning 'a' as initial alphabet
-	alphabet='a';
+	// for lowercase
+	for (int c = 97; c <= 122; ++c)
+		printf("%c ", c);
+	printf("\n");
 
-	//print statement
-	_putchar("Lowercase alphabets:\n");
-
-	//loop statement, that will check the condition
-	//and print the alphabets from 'a' to 'z'
-	while(alphabet<='z')
-	{
-		//printing the alphabets
-		_putchar("%c ",alphabet);
-		//increasing the value by 1
-		alphabet++;
-	}
-   return 0;
-
+	printf("\n");
 }
+
+// Driver program
+int main()
+{
+
+	printf("\n");
+	lowercaseAlphabets();
+
+	return 0;
+}
+
