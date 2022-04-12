@@ -9,7 +9,7 @@ void print_alphabet(void)
         _putcahr("%c ", ch);  
         ch++;  
     }  
-    printf("\n");  
+    _putchar("\n");  
   
     return 0;  
 } 
