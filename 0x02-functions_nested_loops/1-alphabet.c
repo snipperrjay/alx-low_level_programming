@@ -6,11 +6,11 @@
  * Return: nothing, return void
  */
 
-int main(void)
+int main()
 {
 	   char ch = 'a';
 
-    _putchar("Lowercase English Alphabets:\n");
+    void print_alphabet(void)("Lowercase English Alphabets:\n");
     while(ch <= 'z')
     {
         _putchar("%c ", ch);
