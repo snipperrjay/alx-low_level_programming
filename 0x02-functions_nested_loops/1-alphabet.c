@@ -1,25 +1,22 @@
-// C program to print alphabets
-#include"main.h"
-
+#include <main.h>
 // Function to print the alphabet
 // in lower case
-void lowercaseAlphabets()
+void print_alphabet(void)
 {
 	// for lowercase
 	for (int c = 97; c <= 122; ++c)
-		printf("%c ", c);
-	printf("\n");
+		_putchar("%c", c);
 
-	printf("\n");
 }
 
 // Driver program
 int main()
 {
 
-	printf("\n");
-	lowercaseAlphabets();
-
+  _putchar("\n");
+    lowercaseAlphabets();
+  
+ 
 	return 0;
 }
 
