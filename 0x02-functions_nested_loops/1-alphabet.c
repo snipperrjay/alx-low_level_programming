@@ -1,15 +1,20 @@
-#include "main.h"  
-  
-void print_alphabet(void)  
-{  
-    char ch = 'a';  
-  
-    while(ch <= 'z')  
-    {  
-        _putchar("%c ", ch);  
-        ch++;  
-    }  
-    _putchar("\n");  
-  
-    return 0;  
-} 
+#include "main.h"
+
+/**
+ * print_alphabet - Entry point
+ * Return:0
+ */
+
+void print_alphabet(void)
+{
+	char c = 'a';
+
+	while (c <= 'z')
+	{
+		_putchar(c);
+		c++;
+
+	}
+	_putchar('\n');
+
+}
