@@ -1,22 +1,15 @@
-#include "main.h"
-// Function to print the alphabet
-// in lower case
-void print_alphabet(void)
-{
-	// for lowercase
-	for (int c = 97; c <= 122; ++c)
-		_putchar("%c", c);
-
-}
-
-// Driver program
-int main()
-{
-
-  _putchar("\n");
-    lowercaseAlphabets();
+#include "main.h"  
   
- 
-	return 0;
-}
-
+void print_alphabet(void)  
+{  
+    char ch = 'a';  
+  
+    while(ch <= 'z')  
+    {  
+        _putcahr("%c ", ch);  
+        ch++;  
+    }  
+    printf("\n");  
+  
+    return 0;  
+} 
