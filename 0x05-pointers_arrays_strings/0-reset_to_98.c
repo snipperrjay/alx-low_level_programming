@@ -8,7 +8,7 @@
  **/
 
 
-int main(void)
+int main.c;
 {
 	int n;
 	int *p;
