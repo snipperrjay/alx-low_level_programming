@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - check the code 
+ * int _putchar(char c)
  *
  * modif_my_param set the integer to 98
  * Return: Always 0
@@ -26,6 +26,3 @@ int main(void)
 
 	return 0;
 }
-
- 
-
