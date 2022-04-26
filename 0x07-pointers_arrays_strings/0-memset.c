@@ -5,7 +5,6 @@
  *@s: space of memory
  *@b: byte
  *@n: memory area
- *
  *Return: pointer to the memory area
  */
 
