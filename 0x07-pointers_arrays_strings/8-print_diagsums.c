@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
  *print_diagsums - prints the sum of the two diagonals
@@ -23,4 +23,6 @@ void print_diagsums(int *a, int size)
 		sum2 += a[(size - 1) * (y + 1)];
 
 	printf("%d, %d\n", sum1, sum2);
+
+	return 0;
 }
