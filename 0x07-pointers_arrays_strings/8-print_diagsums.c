@@ -11,6 +11,7 @@
 void print_diagsums(int *a, int size)
 {
 	int x, y, sum1, sum2;
+
 	sum1 = 0;
 	sum2 = 0;
 
@@ -24,5 +25,5 @@ void print_diagsums(int *a, int size)
 
 	printf("%d, %d\n", sum1, sum2);
 
-	return 0;
+	return (dest);
 }
