@@ -5,7 +5,6 @@
  *@dest: destination area memory
  *@src: source memory area
  *@n: data
- *
  *Return: dest
  */
 
