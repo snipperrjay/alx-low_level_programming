@@ -1,1 +1,1 @@
-def febonaci
+def febonanci
