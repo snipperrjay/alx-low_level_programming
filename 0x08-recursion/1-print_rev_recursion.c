@@ -1,32 +1,16 @@
 #include "main.h"
-
 /**
- * main - check code
+ *_print_rev_recursion - print string in reverse
+ *@s: string
  *
- * print_rev_recursion - print string
- *
- * Return nothing:
- *
- **/
-
- void _print_rev_recursion(char *s);
+ *Return: nothing
+ */
+void _print_rev_recursion(char *s)
 {
-	if (*s)
-
-
+	if (*s == '\0')
 	{
-		reverse(s + 1);
-
-		_putchar("%c", *s);
+		return;
 	}
-}
-int main()
-{
-	char *s[] = "Alfred";
-
-		reverse(*s);
-		_putchar("%s\n", *s);
-
-
-	return 0;
+	_print_rev_recursion(s + 1);
+	_putchar(s[0]);
 }
