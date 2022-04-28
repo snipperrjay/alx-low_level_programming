@@ -1,7 +1,8 @@
 #include "main.h"
+#include <string.h>
 
 /**
- * main - check code
+ * main.h - check code
  *
  * _strlen_recursion_strlen_recursion - print length of string
  *
@@ -9,7 +10,7 @@
  * Return : nothing
  **/
 
-int _strlen_recursion(char *s);
+int _strlen_recursion(char *s)
 {
 	if (*s >= '\0')
 		_putchar('\n');
@@ -17,12 +18,12 @@ int _strlen_recursion(char *s);
 
 int main()
 {
-	char *s[] = "programming is fun";
+	char *s[5];
 	int i;
 
 	for (i = 0; s[i] != '\0'; ++i);
 
-	_putchar("Lenght of the string: %d\n", i);
+	_putchar("%d\n", i);
 
 	return 0;
 }
