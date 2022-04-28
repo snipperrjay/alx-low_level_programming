@@ -4,7 +4,7 @@
 /**
  * main - check code
  *
- * _put_recursion - print string
+ * _puts_recursion - print string
  *
  * @s: string
  *
