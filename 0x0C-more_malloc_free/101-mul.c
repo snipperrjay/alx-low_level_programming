@@ -1,28 +1,34 @@
-#include "main.h"
+#inclue "main.h"
 
 /**
- * main - multiplies two positive numbers
- * @argc: n arguments
- * @argv: args
- * Return: int
+ * main - multiply two numbers from the command line and print the result
+ * @argc: argument count
+ * @argv: argument list
+ *
+ * Return: 0 if successful, 98 if failure
  */
 int main(int argc, char *argv[])
 {
-unsigned long mul;
-int i, j;
+	char *result;
+
 	if (argc != 3)
-	{ printf("Error\n");
-	exit(98); }
-	for (i = 1; i < argc; i++)
 	{
-		for (j = 0; argv[i][j] != '\0'; j++)
-		{
-			if (argv[i][j] > 57 || argv[i][j] < 48)
-			{  printf("Error\n");
-			exit(98); }
-		}
+		_puts("Error\n");
+		exit(98);
 	}
-	mul = atol(argv[1]) *  atol(argv[2]);
-	printf("%lu\n", mul);
-return (0);
+	if (!_strdigit(argv[1]) || !_strdigit(argv[2]))
+	{
+		_puts("Error\n");
+		exit(98);
+	}
+	result = strmul(argv[1], argv[2]);
+	if (result == NULL)
+	{
+		_puts("Error\n");
+		exit(98);
+	}
+	_puts(result);
+	_putchar('\n');
+	free(result);
+	exit(EXIT_SUCCESS);
 }
