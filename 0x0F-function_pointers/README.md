@@ -37,7 +37,7 @@ This task requires that you create four different files.
 
 3-calc.h
 
-This file should contain all the function prototypes and data structures used by the program. You can use this structure
+This file should contain all the function prototypes and data structures used by the program. You can use this structure:
 
 3-op_functions.c
 
@@ -88,3 +88,5 @@ If the number of argument is not the correct one, print Error, followed by a new
 If the number of bytes is negative, print Error, followed by a new line, and exit with the status 2
 You do not have to compile with any flags
 Note: if you want to translate your opcodes to assembly instructions, you can use, for instance udcli.
+Note 0: je is equivalent to jz
+Note 1: depending on how you write your main function, and on which machine you compile your program, the opcodes (and by extension the assembly code) might be different than the above example
